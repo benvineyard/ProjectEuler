@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace ProjectEuler
 {
-    class Problem1
+    class Multiples
     {
-        public static int Answer()
+        internal static int CalculateSum(int firstMultiple, int secondMultiple, int threshold)
         {
             int sum = 0;
 
-            for (int i = 0; i < 1000; i++)
+            for (int i = 0; i < threshold; i++)
             {
-                if (i % 3 == 0 || i % 5 == 0)
+                if (i % firstMultiple == 0 || i % secondMultiple == 0)
                 {
                     sum += i;
                 }

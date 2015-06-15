@@ -50,11 +50,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MenuRouter.cs" />
+    <Compile Include="Menu\Menu.cs" />
+    <Compile Include="Menu\MenuRouter.cs" />
     <Compile Include="Palindrome.cs" />
-    <Compile Include="Problem1.cs" />
-    <Compile Include="Problem2.cs" />
-    <Compile Include="Problem3.cs" />
+    <Compile Include="Multiples.cs" />
+    <Compile Include="Fibonacci.cs" />
+    <Compile Include="Prime.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

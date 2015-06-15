@@ -6,18 +6,18 @@ using System.Threading.Tasks;
 
 namespace ProjectEuler
 {
-    class Problem2
+    class Fibonacci
     {
-        public static int EvenFibonacciNumbersSum()
+        public static int EvenFibonacciNumbersSum(int threshold)
         {
             int sum = 0;
             int nthFibonacci = 0;
 
-            for (int i = 1; i < 4000000; i++)
+            for (int i = 1; i < threshold; i++)
             {
                 nthFibonacci = GetNthFibonacci(i);
 
-                if (nthFibonacci > 4000000)
+                if (nthFibonacci > threshold)
                     break;
 
                 if (nthFibonacci % 2 == 0)
