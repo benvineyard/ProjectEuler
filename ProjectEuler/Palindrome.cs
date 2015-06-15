@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace ProjectEuler
 {
-    class Palindrome
+    public class Palindrome
     {
         /// <summary>
         /// Calculates the largest possible palindrome from the product of 
         /// two three digit numbers.
         /// </summary>
         /// <returns>The largest possible palindrome.</returns>
-        internal static int GetLargestFromProductOfTwoThreeDigitNumbers()
+        public static int GetLargestFromProductOfTwoThreeDigitNumbers()
         {
             int largestProduct = 0;
 

@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace ProjectEuler
 {
-    class Multiples
+    public class Multiples
     {
-        internal static int CalculateSum(int firstMultiple, int secondMultiple, int threshold)
+        public static int CalculateSum(int firstMultiple, int secondMultiple, int threshold)
         {
             int sum = 0;
 

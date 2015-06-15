@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProjectEuler
 {
-    class Fibonacci
+    public class Fibonacci
     {
         public static int EvenFibonacciNumbersSum(int threshold)
         {

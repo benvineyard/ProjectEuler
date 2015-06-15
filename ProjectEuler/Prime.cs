@@ -11,14 +11,13 @@ namespace ProjectEuler
     /// The question is "What is the largest prime factor of the number 600851475143?"
     /// <see cref="projecteuler.net/problem=3"/>
     /// </summary>
-    class Prime
+    public class Prime
     {
-        // TODO: Create a more efficient solution.  This one takes tooooooo long.
-        internal static long GetLargestPrimeFactor(long numberToBeFactored = 600851475143)
+        public static long GetLargestPrimeFactor(long numberToBeFactored = 600851475143)
         {
             int lastPrimeFactor = 0;
 
-            for (int i = 2; i < numberToBeFactored; i++)
+            for (int i = 3; i <= Math.Sqrt(numberToBeFactored); i+=2)
                 if (IsPrimeNumber(i) && numberToBeFactored % i == 0)
                     lastPrimeFactor = i;    
 
@@ -27,10 +26,10 @@ namespace ProjectEuler
 
         private static bool IsPrimeNumber(long number)
         {
-            if (number < 2)
+            if (number % 2 == 0)
                 return false;
 
-            for (int i = 2; i < number; i++)
+            for (int i = 3; i <= Math.Sqrt(number); i+=2)
                 if (number % i == 0)
                     return false;
 
