@@ -22,5 +22,24 @@ namespace ProjectEuler
 
             return sum;
         }
+
+        public static int SmallestEvenlyDivisibleByAllFromXtoY(int rangeStart, int rangeEnd)
+        {
+            for (int i = rangeEnd + 1; i < int.MaxValue; i++)
+            {
+                bool divisible = true;
+
+                for (int j = 2; j < rangeEnd; j++)
+                {
+                    if (i % j != 0)
+                    {
+                        divisible = false;
+                        break;
+                    }
+                }
+                if (divisible) return i;
+            }
+            return -1;
+        }
     }
 }

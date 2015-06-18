@@ -44,6 +44,13 @@ namespace ProjectEuler
                     Console.Write(Palindrome.GetLargestFromProductOfTwoThreeDigitNumbers());
                     Console.WriteLine();
                     break;
+                case 5:
+                    Console.ForegroundColor = ConsoleColor.Gray;
+                    Console.WriteLine("Problem #5 - What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20: ");
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.Write(Multiples.SmallestEvenlyDivisibleByAllFromXtoY(1, 20));
+                    Console.WriteLine();
+                    break;
                 default:
                     break;
             }

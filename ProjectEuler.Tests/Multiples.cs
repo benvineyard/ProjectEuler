@@ -13,5 +13,13 @@ namespace ProjectEuler.Tests
 
             Assert.AreEqual(question1, 233168);
         }
+
+        [TestMethod]
+        public void SmallestEvenlyDivisibleByAllFromXtoY()
+        {
+            int question5 = ProjectEuler.Multiples.SmallestEvenlyDivisibleByAllFromXtoY(1, 20);
+
+            Assert.AreEqual(question5, 232792560);
+        }
     }
 }
