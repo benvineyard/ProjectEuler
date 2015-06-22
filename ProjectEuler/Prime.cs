@@ -24,16 +24,56 @@ namespace ProjectEuler
             return lastPrimeFactor;
         }
 
-        private static bool IsPrimeNumber(long number)
+        /// <summary>
+        /// Retrieves the nth prime number where n is <paramref name="n"/>
+        /// </summary>
+        /// <param name="n">The position index to search prime for.</param>
+        /// <returns>A prime number in the nth position.</returns>
+        public static long GetNthPrime(long n)
         {
-            if (number % 2 == 0)
-                return false;
+            long count = 0;
 
-            for (int i = 3; i <= Math.Sqrt(number); i+=2)
-                if (number % i == 0)
+            for (int i = 2; i < int.MaxValue; i++)
+            {
+                if (IsPrimeNumber(i))
+                {
+                    count += 1;
+
+                    if (count == n)
+                        return i;
+                }
+            }
+
+            return 0;
+        }
+
+        private static bool IsPrimeNumber(long candidate)
+        {
+            // Test whether the parameter is a prime number.
+            if ((candidate & 1) == 0)
+            {
+                if (candidate == 2)
+                {
+                    return true;
+                }
+                else
+                {
                     return false;
+                }
+            }
 
-            return true;
+            // Note:
+            // ... This version was changed to test the square.
+            // ... Original version tested against the square root.
+            // ... Also we exclude 1 at the end.
+            for (int i = 3; (i * i) <= candidate; i += 2)
+            {
+                if ((candidate % i) == 0)
+                {
+                    return false;
+                }
+            }
+            return candidate != 1;
         }
     }
 }

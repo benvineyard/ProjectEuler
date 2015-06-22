@@ -51,6 +51,20 @@ namespace ProjectEuler
                     Console.Write(Multiples.SmallestEvenlyDivisibleByAllFromXtoY(1, 20));
                     Console.WriteLine();
                     break;
+                case 6:
+                    Console.ForegroundColor = ConsoleColor.Gray;
+                    Console.WriteLine("Problem #6 - Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum: ");
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.Write(Series.DifferenceSumOfSquaresAndSquaredSum(1, 100));
+                    Console.WriteLine();
+                    break;
+                case 7:
+                    Console.ForegroundColor = ConsoleColor.Gray;
+                    Console.WriteLine("Problem #7 - What is the 10 001st prime number: ");
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.Write(Prime.GetNthPrime(10001));
+                    Console.WriteLine();
+                    break;
                 default:
                     break;
             }

@@ -55,6 +55,7 @@
     <Compile Include="Multiples.cs" />
     <Compile Include="Prime.cs" />
     <Compile Include="Palindrome.cs" />
+    <Compile Include="Series.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ProjectEuler\ProjectEuler.csproj">

@@ -13,5 +13,13 @@ namespace ProjectEuler.Tests
 
             Assert.AreEqual(question3, 6857);
         }
+
+        [TestMethod]
+        public void Get10001thPrime()
+        {
+            long question7 = ProjectEuler.Prime.GetNthPrime(10001);
+
+            Assert.AreEqual(question7, 104743);
+        }
     }
 }
