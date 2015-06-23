@@ -72,6 +72,13 @@ namespace ProjectEuler
                     Console.Write(Series.AdjacentProductOfKnownSeries(13));
                     Console.WriteLine();
                     break;
+                case 9:
+                    Console.ForegroundColor = ConsoleColor.Gray;
+                    Console.WriteLine("Problem #9 - There exists exactly one Pythagorean triplet for which a + b + c = 1000. Find the product abc: ");
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.Write(Pythagorean.GetPythagoreanTripletProductForProvidedSum(1000));
+                    Console.WriteLine();
+                    break;
                 default:
                     break;
             }
