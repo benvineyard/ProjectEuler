@@ -65,6 +65,13 @@ namespace ProjectEuler
                     Console.Write(Prime.GetNthPrime(10001));
                     Console.WriteLine();
                     break;
+                case 8:
+                    Console.ForegroundColor = ConsoleColor.Gray;
+                    Console.WriteLine("Problem #8 - Find the thirteen adjacent digits in the 1000-digit number that have the greatest product. What is the value of this product: ");
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.Write(Series.AdjacentProductOfKnownSeries(13));
+                    Console.WriteLine();
+                    break;
                 default:
                     break;
             }

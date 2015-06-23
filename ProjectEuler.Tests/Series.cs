@@ -13,5 +13,13 @@ namespace ProjectEuler.Tests
 
             Assert.AreEqual(question6, 25164150);
         }
+
+        [TestMethod]
+        public void AdjacentProductOfKnownSeries()
+        {
+            var question8 = ProjectEuler.Series.AdjacentProductOfKnownSeries(13);
+
+            Assert.AreEqual(question8, 23514624000);
+        }
     }
 }
