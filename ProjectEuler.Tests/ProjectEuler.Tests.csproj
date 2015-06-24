@@ -56,7 +56,7 @@
     <Compile Include="Prime.cs" />
     <Compile Include="Palindrome.cs" />
     <Compile Include="Series.cs" />
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="Pythagorean.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ProjectEuler\ProjectEuler.csproj">

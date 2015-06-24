@@ -25,6 +25,24 @@ namespace ProjectEuler
         }
 
         /// <summary>
+        /// Calculates the sum of all primes below the provided <paramref name="ceiling"/>.
+        /// </summary>
+        /// <param name="ceiling">The maximum number to sum primes.</param>
+        /// <returns>The calulcation of summed primes.</returns>
+        public static long GetSumOfPrimes(long ceiling)
+        {
+            long sum = 0;
+
+            for (int i = 2; i < ceiling; i++)
+            {
+                if (IsPrimeNumber(i))
+                    sum += i;
+            }
+            
+            return sum;
+        }
+
+        /// <summary>
         /// Retrieves the nth prime number where n is <paramref name="n"/>
         /// </summary>
         /// <param name="n">The position index to search prime for.</param>

@@ -79,6 +79,13 @@ namespace ProjectEuler
                     Console.Write(Pythagorean.GetPythagoreanTripletProductForProvidedSum(1000));
                     Console.WriteLine();
                     break;
+                case 10:
+                    Console.ForegroundColor = ConsoleColor.Gray;
+                    Console.WriteLine("Problem #10 - Find the sum of all the primes below two million.: ");
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.Write(Prime.GetSumOfPrimes(2000000));
+                    Console.WriteLine();
+                    break;
                 default:
                     break;
             }
