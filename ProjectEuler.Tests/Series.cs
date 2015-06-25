@@ -63,5 +63,18 @@ namespace ProjectEuler.Tests
 
             Assert.AreEqual(question13, "5537376230");
         }
+
+        /// <summary>
+        /// Test method to validate correctness of the Project Euler 
+        /// #14 math problem: "Calulcate the longest Collatz Sequence."
+        /// </summary>
+        /// <see cref="https://projecteuler.net/problem=14"/>
+        [TestMethod]
+        public void LongestCollatzSequence()
+        {
+            var question14 = ProjectEuler.Series.LongestCollatzSequence();
+
+            Assert.AreEqual(question14, 837799);
+        }
     }
 }

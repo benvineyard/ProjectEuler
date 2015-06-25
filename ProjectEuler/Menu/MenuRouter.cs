@@ -129,6 +129,21 @@ namespace ProjectEuler
                     Console.Write(Series.CalculateLargeSum());
                     Console.WriteLine();
                     break;
+                case 14:
+                    Console.ForegroundColor = ConsoleColor.Gray;
+                    Console.WriteLine("Problem #14 - Calculate the longest Collatz Sequence.: ");
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.Write(Series.LongestCollatzSequence());
+                    Console.WriteLine();
+                    break;
+                case 15:
+                    Console.ForegroundColor = ConsoleColor.Gray;
+                    Console.WriteLine("Problem #15 - Starting in the top left corner of a 2×2 grid, and only being able to move to the right and down, ");
+                    Console.WriteLine("there are exactly 6 routes to the bottom right corner.  How many such routes are there through a 20×20 grid?: ");
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.Write(Grid.GetNumTopLeftToBottomRightPaths(20));
+                    Console.WriteLine();
+                    break;
                 default:
                     break;
             }

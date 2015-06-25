@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -59,6 +60,21 @@ namespace ProjectEuler
                 }
             }
             return currentGreatestProduct;
+        }
+
+        /// <summary>
+        /// Starting in the top left corner of a 2×2 grid, and 
+        /// only being able to move to the right and down, there 
+        /// are exactly 6 routes to the bottom right corner.
+        /// </summary>
+        /// <seealso cref="https://projecteuler.net/problem=15"/>
+        /// <param name="squareGridWidth">Grid width, default is 20X20</param>
+        /// <returns>The number of paths from the top left to bottom right of grid.</returns>
+        public static BigInteger GetNumTopLeftToBottomRightPaths(int squareGridWidth = 20)
+        {
+            BigInteger factSize = Factorial.Calculate(squareGridWidth);
+            BigInteger comb = Factorial.Calculate(squareGridWidth * 2) / (factSize * factSize);
+            return comb;
         }
     }
 }

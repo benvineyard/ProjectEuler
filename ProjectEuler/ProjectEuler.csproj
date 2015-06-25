@@ -51,6 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Factorial.cs" />
     <Compile Include="Grid.cs" />
     <Compile Include="Menu\Menu.cs" />
     <Compile Include="Menu\MenuRouter.cs" />

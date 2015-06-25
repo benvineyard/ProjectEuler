@@ -46,5 +46,19 @@ namespace ProjectEuler.Tests
 
             Assert.AreEqual(question11, 70600674);
         }
+
+        /// <summary>
+        /// Test method to validate correctness of the Project Euler 
+        /// #15 math problem: "How many such routes (top left to bottom right) 
+        /// are there through a 20×20 grid?"
+        /// </summary>
+        /// <see cref="https://projecteuler.net/problem=15"/>
+        [TestMethod]
+        public void GetNumTopLeftToBottomRightPathsSize20Grid()
+        {
+            var question15 = ProjectEuler.Grid.GetNumTopLeftToBottomRightPaths(20);
+
+            Assert.AreEqual(question15, 137846528820);
+        }
     }
 }
