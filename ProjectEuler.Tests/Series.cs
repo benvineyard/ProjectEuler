@@ -35,5 +35,33 @@ namespace ProjectEuler.Tests
 
             Assert.AreEqual(question8, 23514624000);
         }
+
+        /// <summary>
+        /// Test method to validate correctness of the Project Euler 
+        /// #12 math problem: "What is the value of the first triangle 
+        /// number to have over five hundred divisors?"
+        /// </summary>
+        /// <see cref="https://projecteuler.net/problem=12"/>
+        [TestMethod]
+        public void FirstTriangleNumberWithOver500Divisors()
+        {
+            var question12 = ProjectEuler.Series.FirstTriangleNumberWithOverXDivisors(500);
+
+            Assert.AreEqual(question12, 76576500);
+        }
+
+        /// <summary>
+        /// Test method to validate correctness of the Project Euler 
+        /// #13 math problem: "Work out the first ten digits of the 
+        /// sum of the following one-hundred 50-digit numbers."
+        /// </summary>
+        /// <see cref="https://projecteuler.net/problem=13"/>
+        [TestMethod]
+        public void CalculateLargeSum()
+        {
+            var question13 = ProjectEuler.Series.CalculateLargeSum();
+
+            Assert.AreEqual(question13, "5537376230");
+        }
     }
 }
